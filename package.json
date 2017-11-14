@@ -1,0 +1,33 @@
+{
+  "name": "no",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "mocha ./test/**/*-test.js",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter spec --recursive",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.13.0"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "chai-http": "^1.0.0",
+    "eslint": "^4.10.0",
+    "eslint-config-node": "^1.6.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "proxyquire": "^1.8.0",
+    "ultimate-chai": "^4.0.0"
+  },
+  "description": ""
+}
